@@ -1,0 +1,10 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+parameters:
+    paths:
+        - app/
+        - src/
+    # Level 9 is the highest level (strict types everywhere)
+    level: 5
+    ignoreErrors:
+        # Aquí podremos ignorar errores específicos si es necesario

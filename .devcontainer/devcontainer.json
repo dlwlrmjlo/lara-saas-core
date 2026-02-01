@@ -1,0 +1,26 @@
+{
+    "name": "LaraSaaS Core (Sail)",
+    "dockerComposeFile": [
+        "../compose.yaml"
+    ],
+    "service": "laravel.test",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "amiralizadeh9480.laravel-extra-intellisense",
+                "onecentlin.laravel-blade",
+                "esbenp.prettier-vscode"
+            ],
+            "settings": {
+                "php.validate.executablePath": "/usr/bin/php",
+                "intelephense.environment.phpVersion": "8.3",
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "remoteUser": "sail",
+    "postCreateCommand": "chown -R 1000:1000 /var/www/html"
+}
